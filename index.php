@@ -1,9 +1,9 @@
 <?php include "head.php"; ?>
-			<h2><marquee>selamat datang di Website Saya</marquee></h2>
+			<h2>selamat datang di PT.I M J</h2>
 				<hr>
 			<?php
-				 $namaDepan= "Muhammad";
-				 $namaBelakang= "Faiz";
+				 $namaDepan= "Tehnik";
+				 $namaBelakang= "Informatika";
 				 $namaLengkap= "$namaDepan.$namaBelakang";
 				 echo "<br>";
 				 echo "$namaLengkap";
@@ -11,7 +11,9 @@
 
 
 			<div class="well">
-<p>Selamat datang di praktikum Pemerograman web dengan PHP </p>
-<p>HEllO Word</p>
+<p>PT. Indonesia Maju Jaya </p>
+<p>Muhammad Faiz</p>
+<P>Aldian Nur</P>
+<P>Rifky Wardana</P>
 			</div>
 <?php include "foot.php"; ?>

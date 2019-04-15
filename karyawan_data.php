@@ -123,5 +123,7 @@ if(isset($_POST['qcari'])){
 				}
 				?>
 				</table>
+				<a href="index.php" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-refresh" aria-hidden=
+              "true"></span> Brenda</a>
 				</div>
 <?php include "foot.php"; ?>					

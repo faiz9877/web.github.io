@@ -104,8 +104,11 @@
 					<label class="col-sm-3 control-label">&nbsp;</label>
 					<div class="col-sm-6">
 						<input type="submit" name="add" class="btn btn-sm btn-primary" value="simpan">
-						<a href="index.php" class="btn-sm btn-danger">Batal</a>
+						<a href="karyawan_data.php" class="btn-sm btn-danger">Batal</a>
+						<!-- <a herf="karyawan_data.php" class="btn btn-sm btn-info">Kembali</a> -->
 					</div>
 				</div>
 			</form>
 	<?php include "foot.php"; ?>
+	<!-- <a href="karyawan_data.php" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-refresh" aria-hidden=
+              "true"></span> kembali</a> -->
