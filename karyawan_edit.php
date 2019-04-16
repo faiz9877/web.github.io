@@ -114,7 +114,8 @@
 					<label class="col-sm-3 control-label">&nbsp;</label>
 					<div class="col-sm-6">
 						<input type="submit" name="save" class="btn btn-sm btn-primary" value="Simpan">
-						<a href="index.php" class="btn btn-sm btn-danger">Batal</a>
+						<!-- <a href="karyawan_data.php" class="btn btn-sm btn-danger">Batal</a> -->
+						<a href="karyawan_data.php" class="btn-sm btn-danger">Batal</a>
 					</div>
 				</div>
 			</form>

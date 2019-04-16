@@ -36,7 +36,11 @@
                 ?>
             </table>
             </div>
+            <br>
+            <center>
             <img src="img/btn_print.png" width="25" onClick="window.print();">
-            <a href="karyawan_data.php" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-refresh" aria-hidden=
-              "true"></span> kembali</a>
+            <!-- <a href="karyawan_data.php" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-refresh" aria-hidden=
+              "true"></span> kembali</a> -->
+            <a href="karyawan_data.php" class="btn-sm btn-danger">Kembali</a> 
+            </center>
 <?php include "foot.php"; ?>
