@@ -22,15 +22,15 @@ include("library.php");
 		<li ><a href="index.php">Beranda</a>
 		<li ><a href="#">Master Data</a>
 			<ul>
-			<li ><a href="karyawan_data.php">Data Karyawan</a></li>
+			<li ><a href="karyawan_data">Data Karyawan</a></li>
 		</li>
 			</ul>
 		<li><a href="#" > Laporan</a>
 			<ul>
-			  <li ><a href="karyawan_cetak.php">Cetak Data Karyawan</a></li>
+			  <li ><a href="karyawan_cetak">Cetak Data Karyawan</a></li>
 			</ul>
 		</li>
-    <li><a href="login.php">Login</a></li>
+    <li><a href="login">Login</a></li>
 	</ul>
 	</div>
 	</nav>
