@@ -79,6 +79,6 @@ include("library.php");
           <span class="sr-only">Next</span>
         </a>
       </div>
-    </header> -->
+    </header>
 		<div class="container">
 			<div class="content">

@@ -21,8 +21,7 @@
 				$status				= $_POST['status'];
 
 				$update = mysqli_query($koneksi, "UPDATE karyawan SET nama='$nama', tempat_lahir='$tempat_lahir',
-				tanggal_lahir='$tanggal_lahir', alamat='$alamat', no_telpon='$no_telpon', jabatan='$jabatan', status='$status
-				' WHERE nik='$nik'") or die(mysqli_error());
+				tanggal_lahir='$tanggal_lahir', alamat='$alamat', no_telpon='$no_telpon', jabatan='$jabatan', status='$status' WHERE nik='$nik'") or die(mysqli_error());
 				if($update){
 					header("Location: karyawan_edit.php?nik=".$nik."&pesan=sukses");
 				}else{
@@ -31,8 +30,7 @@
 				}
 			}
 			if(isset($_GET['pesan']) == 'sukses'){
-				echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close"
-				data-dismiss="alert" aria-hidden="true">&times;</button>Data berhasil disimpan.</div>';
+				echo "<div class='alert alert-success alert-dismissable'><button type='button' class='close 'data-dismiss='alert' aria-hidden='true'>&times;</button>Data berhasil disimpan.</div>";
 			}
 						$now = strtotime(date("Y-m-d"));
 						$maxage = date('Y-m-d', strtotime('-16 year', $now));
