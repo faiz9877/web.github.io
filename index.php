@@ -1,4 +1,5 @@
 <?php include "head.php"; ?>
+>>>>>>> Tambah file .htaccess untuk pengamanan sedikit
 			<h2>selamat datang di Website Kami</h2>
 				
 					<center>
