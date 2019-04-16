@@ -2,9 +2,9 @@
 			<h2>selamat datang di Website Kami</h2>
 				
 					<center>
-			  			<img src="img/A3.png" width="200">
-						<img src="img/A2.png" width="180">
-						<img src="img/A1.png" width="200">
+			  			<img src="img/A3.PNG" width="200">
+						<img src="img/A2.PNG" width="180">
+						<img src="img/A1.PNG" width="200">
 			  		</center>
 					  
 					<center>
@@ -26,10 +26,7 @@
 				 $namaLengkap= "$namaDepan.$namaBelakang";
 				 echo "<br>";
 				 echo "$namaLengkap";
-			  ?>
-			 
-			  
-
+			  ?>			
 	<div class="well">
 		<p>PT. Indonesia Maju Jaya </p>
 		<p>Muhammad Faiz</p>
