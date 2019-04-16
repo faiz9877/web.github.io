@@ -1,5 +1,5 @@
 <?php include "head.php"; ?>
-			<h2>selamat datang di Website Kami</h2>
+			<h2>Selamat Datang Di Website Kami</h2>
 				
 					<center>
 			  			<img src="img/A3.PNG" width="200">
@@ -21,16 +21,16 @@
 					  
 	
 			<?php
-				 $namaDepan= "Tehnik";
+				 $namaDepan= "Teknik";
 				 $namaBelakang= "Informatika";
 				 $namaLengkap= "$namaDepan.$namaBelakang";
 				 echo "<br>";
 				 echo "$namaLengkap";
 			  ?>			
 	<div class="well">
-		<p>PT. Indonesia Maju Jaya </p>
+		<p>Official Developer Banjarbaru</p>
 		<p>Muhammad Faiz</p>
-		<P>Aldian Nur</P>
-		<P>Rifky Wardana</P>
+		<P>Muhammad Aldiannur</P>
+		<P>Muhammad Rifky Wardana</P>
 	</div>
 <?php include "foot.php"; ?>
