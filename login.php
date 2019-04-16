@@ -1,3 +1,4 @@
+<?php include "head.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,9 +25,7 @@
     <?php endif;?>
 
         <div class="outter-form-login">
-        <div class="logo-login">
-            <em class="glyphicon glyphicon-user"></em>
-        </div>
+        
             <form action="check-login.php" class="inner-login" method="post">
             <h3 class="text-center title-login">Login Member</h3>
                 <div class="form-group">

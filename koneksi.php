@@ -1,8 +1,8 @@
 <?php
 $db_host = "localhost";
-$db_user = "id9273927_admin";
-$db_pass = "NetBr0k3r64";
-$db_name = "id9273927_pegawai";
+$db_user = "root";
+$db_pass = "M4K4nM4L4m";
+$db_name = "uniska_latihan_app1";
 
 $koneksi = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
