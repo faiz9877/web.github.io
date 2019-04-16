@@ -30,8 +30,7 @@
 				}
 			}
 			if(isset($_GET['pesan']) == 'sukses'){
-				echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close"
-				data-dismiss="alert" aria-hidden="true">&times;</button>Data berhasil disimpan.</div>';
+				echo "<div class='alert alert-success alert-dismissable'><button type='button' class='close 'data-dismiss='alert' aria-hidden='true'>&times;</button>Data berhasil disimpan.</div>/>";
 			}
 						$now = strtotime(date("Y-m-d"));
 						$maxage = date('Y-m-d', strtotime('-16 year', $now));
