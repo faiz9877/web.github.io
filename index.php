@@ -26,10 +26,7 @@
 				 $namaLengkap= "$namaDepan.$namaBelakang";
 				 echo "<br>";
 				 echo "$namaLengkap";
-			  ?>
-			 
-			  
-
+			  ?>			
 	<div class="well">
 		<p>PT. Indonesia Maju Jaya </p>
 		<p>Muhammad Faiz</p>
