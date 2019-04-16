@@ -15,8 +15,8 @@
 					  <img src="img/s1.png" width="40">
 					  <img src="img/s2.png" width="40">
 					  <img src="img/s3.jpg" width="50">
-					  <img src="img/s4.png" width="50">
-					  <img src="img/s5.png" width="50">
+					  <img src="img/s4.PNG" width="50">
+					  <img src="img/s5.PNG" width="50">
 					  </center>
 					  
 	
