@@ -2,9 +2,9 @@
 			<h2>Selamat Datang Di Website Kami</h2>
 				
 					<center>
-			  			<img src="img/A3.PNG" width="200">
-						<img src="img/A2.PNG" width="180">
-						<img src="img/A1.PNG" width="200">
+					<a href="https://www.instagram.com/dhana.gg/"><img src="img/A3.PNG" width="200"></a>
+					<a href="https://www.instagram.com/aldiskatel/"><img src="img/A2.PNG" width="180"></a>
+					<a href="https://www.instagram.com/faiz6985"><img src="img/A1.PNG" width="200"></a>
 			  		</center>
 					  
 					<center>
@@ -28,9 +28,9 @@
 				 echo "$namaLengkap";
 			  ?>			
 	<div class="well">
-		<p>Official Developer Banjarbaru</p>
-		<p>Muhammad Faiz</p>
-		<P>Muhammad Aldiannur</P>
-		<P>Muhammad Rifky Wardana</P>
+		<h2><p align="center"><b>Official Developer Banjarbaru</b></p></h2>
+		<p>- Muhammad Faiz</p>
+		<P>- Muhammad Aldiannur</P>
+		<P>- Muhammad Rifky Wardana</P>
 	</div>
 <?php include "foot.php"; ?>
