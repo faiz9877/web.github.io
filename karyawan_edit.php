@@ -21,8 +21,7 @@
 				$status				= $_POST['status'];
 
 				$update = mysqli_query($koneksi, "UPDATE karyawan SET nama='$nama', tempat_lahir='$tempat_lahir',
-				tanggal_lahir='$tanggal_lahir', alamat='$alamat', no_telpon='$no_telpon', jabatan='$jabatan', status='$status
-				' WHERE nik='$nik'") or die(mysqli_error());
+				tanggal_lahir='$tanggal_lahir', alamat='$alamat', no_telpon='$no_telpon', jabatan='$jabatan', status='$status' WHERE nik='$nik'") or die(mysqli_error());
 				if($update){
 					header("Location: karyawan_edit.php?nik=".$nik."&pesan=sukses");
 				}else{
