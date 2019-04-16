@@ -24,7 +24,7 @@
 				tanggal_lahir='$tanggal_lahir', alamat='$alamat', no_telpon='$no_telpon', jabatan='$jabatan', status='$status
 				' WHERE nik='$nik'") or die(mysqli_error());
 				if($update){
-					header("Location: edit.php?nik=".$nik."&pesan=sukses");
+					header("Location: karyawan_edit.php?nik=".$nik."&pesan=sukses");
 				}else{
 					echo '<div class="alert alert-danger alert-dismissable"><button type="button" class="close"
 					data-dismiss="alert" aria-hidden="true">&times;</button>Data gagal disimpan, silahkan coba lagi.</div>';
