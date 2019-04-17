@@ -1,51 +1,102 @@
-<?php include "head.php"; ?>
+<?php
+session_start();
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+    header("location: karyawan_data");
+    exit;
+}
+require_once "koneksi.php";
+ 
+$username = $password = "";
+$username_err = $password_err = "";
+ 
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+ 
+    if(empty(trim($_POST["username"]))){
+        $username_err = "Tolong isi nama pengguna.";
+    } else{
+        $username = trim($_POST["username"]);
+    }
+    
+    if(empty(trim($_POST["password"]))){
+        $password_err = "Please enter your password.";
+    } else{
+        $password = trim($_POST["password"]);
+    }
+    
+    if(empty($username_err) && empty($password_err)){
+        $sql = "SELECT id, username, password FROM users WHERE username = ?";
+        
+        if($stmt = mysqli_prepare($koneksi, $sql)){
+            
+            mysqli_stmt_bind_param($stmt, "s", $param_username);
+            
+            $param_username = $username;
+            
+            if(mysqli_stmt_execute($stmt)){
+                mysqli_stmt_store_result($stmt);
+                              
+                if(mysqli_stmt_num_rows($stmt) == 1){                    
+                    mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
+                    if(mysqli_stmt_fetch($stmt)){
+                        if(password_verify($password, $hashed_password)){
+                            session_start();
+                            
+                            $_SESSION["loggedin"] = true;
+                            $_SESSION["id"] = $id;
+                            $_SESSION["username"] = $username;                            
+                            
+                            header("location: karyawan_data");
+                        } else{
+                            $password_err = "Sandi salah.";
+                        }
+                    }
+                } else{
+                    $username_err = "Akun tidak terdaftar.";
+                }
+            } else{
+                echo "Oops! Something went wrong. Please try again later.";
+            }
+        }
+              
+        mysqli_stmt_close($stmt);
+    }
+        
+    mysqli_close($koneksi);
+}
+include "head.php";
+?>
+ 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Halaman Login</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="col-md-4 col-md-offset-4 form-login">
-    
-    <?php
-    /* handle error */
-    if (isset($_GET['error'])) : ?>
-        <div class="alert alert-warning alert-dismissible" role="alert">
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <strong>Warning!</strong> <?=base64_decode($_GET['error']);?>
-        </div>
-    <?php endif;?>
-
-        <div class="outter-form-login">
-        
-            <form action="check-login.php" class="inner-login" method="post">
-            <h3 class="text-center title-login">Login Member</h3>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="username" placeholder="Username">
-                </div>
-
-                <div class="form-group">
-                    <input type="password" class="form-control" name="password" placeholder="Password">
-                </div>
-                
-                <input type="submit" class="btn btn-block btn-custom-green" value="LOGIN" />
-                
-                <div class="text-center forget">
-                    <p>Forgot Password ?</p>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Masuk</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        body{ font: 14px sans-serif; }
+        .wrapper{ width: 350px; padding: 20px; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Masuk</h2>
+        <p>Silahkan isi inputan untuk masuk.</p>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                <label>Username</label>
+                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+                <span class="help-block"><?php echo $username_err; ?></span>
+            </div>    
+            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                <label>Password</label>
+                <input type="password" name="password" class="form-control">
+                <span class="help-block"><?php echo $password_err; ?></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Login">
+            </div>
+            <p>Tidak punya akun? <a href="daftar">Daftar Sekarang</a>.</p>
+        </form>
+    </div>    
+</body>
 </html>
