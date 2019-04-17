@@ -1,6 +1,14 @@
 <?php
 include("koneksi.php");
 include("library.php");
+session_start();
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+  $key="Logout";
+  $value="logout";
+}else{
+  $key="Login";
+  $value="login";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +38,7 @@ include("library.php");
 			  <li ><a href="karyawan_cetak">Cetak Data Karyawan</a></li>
 			</ul>
 		</li>
-    <li><a href="login">Login</a></li>
+    <li><a href="<?php echo $value; ?>"><?php echo $key; ?></a></li>
 	</ul>
 	</div>
 	</nav>
