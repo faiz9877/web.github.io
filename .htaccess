@@ -7,4 +7,4 @@ RewriteRule ^(.*)$ $1.php
 </IfModule>
 
 #disable listing directory
-Options –Indexes
+#Options All –Indexes

@@ -23,7 +23,7 @@
 			<?php
 				 $namaDepan= "Teknik";
 				 $namaBelakang= "Informatika";
-				 $namaLengkap= "$namaDepan.$namaBelakang";
+				 $namaLengkap= "$namaDepan $namaBelakang";
 				 echo "<br>";
 				 echo "$namaLengkap";
 			  ?>			
