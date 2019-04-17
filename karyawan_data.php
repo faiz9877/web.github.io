@@ -1,4 +1,12 @@
-<?php include "head.php"; ?>
+<?php 
+session_start();
+if(empty($_SESSION["loggedin"])){
+	header("location: login");
+	echo "anjir";
+    exit;
+}
+include "head.php"; 
+?>
 
 		<h2>Data Karyawan</h2>
 		<hr />
