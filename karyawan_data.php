@@ -1,4 +1,11 @@
-<?php include "head.php"; ?>
+<?php 
+session_start();
+if(empty($_SESSION["loggedin"])){
+	header("location: login");
+    exit;
+}
+include "head.php"; 
+?>
 
 		<h2>Data Karyawan</h2>
 		<hr />
@@ -27,7 +34,7 @@ if(isset($_POST['qcari'])){
 	$qcari%' or tempat_lahir like '%$qcari%' ";
 }
 ?>
-<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><a href="karyawan_add.php">Tambah Data</a>
+<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><a href="karyawan_add">Tambah Data</a>
 		<br/>
 		<br/>
 <div class="form-group">
@@ -83,7 +90,7 @@ if(isset($_POST['qcari'])){
 						<tr>
 							<td><?php echo $no; ?></td>
 							<td><?php echo $row['nik']; ?></td>
-							<td><a href="karyawan_detail.php?nik=<?php echo $row['nik']; ?>"><span class=
+							<td><a href="karyawan_detail?nik=<?php echo $row['nik']; ?>"><span class=
 							"glyphicon glyphicon-user" aria-hidden="true"></span> <?php echo $row['nama']; ?>
 							</a></td>
 							<td><?php echo $row['tempat_lahir']; ?></td>
@@ -107,11 +114,11 @@ if(isset($_POST['qcari'])){
 						<?php } ?>
 								</td>
 								<td>
-									<a href="karyawan_edit.php?nik=<?php echo $row['nik']; ?>" title="Edit Data"
+									<a href="karyawan_edit?nik=<?php echo $row['nik']; ?>" title="Edit Data"
 									class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-edit"
 									aria-hidden="true"></span></a>
 									
-									<a href="karyawan_data.php?aksi=delate&nik=<?php echo $row['nik']; ?>"title=
+									<a href="karyawan_data?aksi=delate&nik=<?php echo $row['nik']; ?>"title=
 									"Hapus Data" onclick="return confirm('Anda yakin akan menghapus data <?php 
 									echo $row['nama']; ?>?')" class="btn btn-danger btn-sm"><span class=
 									"glyphicon glyphicon-trash" aria-hidden"true"></span></a?
@@ -123,7 +130,7 @@ if(isset($_POST['qcari'])){
 				}
 				?>
 				</table>
-				<a href="index.php" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-refresh" aria-hidden=
+				<a href="index" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-refresh" aria-hidden=
               "true"></span> Brenda</a>
 				</div>
 <?php include "foot.php"; ?>					

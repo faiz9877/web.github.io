@@ -1,10 +1,10 @@
 <?php include "head.php"; ?>
-			<h2>selamat datang di Website Kami</h2>
+			<h2>Selamat Datang Di Website Kami</h2>
 				
 					<center>
-			  			<img src="img/A3.PNG" width="200">
-						<img src="img/A2.PNG" width="180">
-						<img src="img/A1.PNG" width="200">
+					<a href="https://github.com/aldiskatel"><img src="img/A3.PNG" width="200"></a>
+					<a href="https://www.instagram.com/dhana.gg/"><img src="img/A2.PNG" width="180"></a>
+					<a href="https://www.instagram.com/faiz6985"><img src="img/A1.PNG" width="200"></a>
 			  		</center>
 					  
 					<center>
@@ -21,16 +21,16 @@
 					  
 	
 			<?php
-				 $namaDepan= "Tehnik";
+				 $namaDepan= "Teknik";
 				 $namaBelakang= "Informatika";
-				 $namaLengkap= "$namaDepan.$namaBelakang";
+				 $namaLengkap= "$namaDepan $namaBelakang";
 				 echo "<br>";
 				 echo "$namaLengkap";
 			  ?>			
 	<div class="well">
-		<p>PT. Indonesia Maju Jaya </p>
-		<p>Muhammad Faiz</p>
-		<P>Aldian Nur</P>
-		<P>Rifky Wardana</P>
+		<h2><p align="center"><b>Official Developer Banjarbaru</b></p></h2>
+		<p>- Muhammad Faiz</p>
+		<P><a href="https://github.com/aldiskatel">- Muhammad Aldian Nur</a></P>
+		<P>- Muhammad Rifky Wardana</P>
 	</div>
 <?php include "foot.php"; ?>

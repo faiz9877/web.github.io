@@ -1,12 +1,11 @@
 <?php include "head.php"; ?>
 			<h2>Data Karyawan &raquo; Edit Data</h2>
 			<hr />
-
 			<?php
 			$nik = $_GET['nik'];
 			$sql = mysqli_query($koneksi, "SELECT * FROM karyawan WHERE nik='$nik'");
 			if(mysqli_num_rows($sql) == 0){
-					header("Location: index.php");
+					header("Location: index");
 			}else{
 				$row = mysqli_fetch_assoc($sql);
 			}
@@ -23,7 +22,7 @@
 				$update = mysqli_query($koneksi, "UPDATE karyawan SET nama='$nama', tempat_lahir='$tempat_lahir',
 				tanggal_lahir='$tanggal_lahir', alamat='$alamat', no_telpon='$no_telpon', jabatan='$jabatan', status='$status' WHERE nik='$nik'") or die(mysqli_error());
 				if($update){
-					header("Location: karyawan_edit.php?nik=".$nik."&pesan=sukses");
+					header("Location: karyawan_edit?nik=".$nik."&pesan=sukses");
 				}else{
 					echo '<div class="alert alert-danger alert-dismissable"><button type="button" class="close"
 					data-dismiss="alert" aria-hidden="true">&times;</button>Data gagal disimpan, silahkan coba lagi.</div>';

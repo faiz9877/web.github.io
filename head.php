@@ -1,6 +1,12 @@
 <?php
 include("koneksi.php");
 include("library.php");
+session_start();
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+  $usernich="<li><a href='#'>Profile</a><ul><li ><a href='reset_password'>Ubah Sandi Saya</a></li><li><a href='logout'>Logout</a></li></ul></li>";
+}else{
+  $usernich="<li><a href='login'>Login</a></li>";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,17 +25,20 @@ include("library.php");
 	<nav class="navbar navbar-inverse ">
 	<div id="navbar" >
 	<ul class="dropDownMenu">
-		<li ><a href="/latihan_appl/">Beranda</a> <a href="index.php">
+		<li ><a href="index.php">Beranda</a>
 		<li ><a href="#">Master Data</a>
 			<ul>
-			<li ><a href="karyawan_data.php">Data Karyawan</a></li>
+			<li ><a href="karyawan_data">Data Karyawan</a></li>
 		</li>
 			</ul>
 		<li><a href="#" > Laporan</a>
 			<ul>
-			<li ><a href="karyawan_cetak.php">Cetak Data Karyawan</a></li>
-			<ul>
+			  <li ><a href="karyawan_cetak">Cetak Data Karyawan</a></li>
+			</ul>
 		</li>
+    <!-- ini punya user -->
+      <?php echo $usernich; ?>
+    <!-- akhir punya user -->
 	</ul>
 	</div>
 	</nav>
