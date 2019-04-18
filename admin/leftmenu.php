@@ -9,7 +9,7 @@
                     <img src="assets/img/avatar3.png" class="img-circle" alt="User Image" />
                 </div>
                 <div class="pull-left info">
-                    <p>Hello, Aldi Ganteng</p>
+                    <p>Hello, Ganteng</p>
 
                     <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                 </div>
@@ -24,56 +24,13 @@
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-building-o"></i>
-                        <span>Data Masjid</span>
+                        <span>Data website</span>
                         <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="?page=tambah_masjid"><i class="fa fa-angle-double-right"></i> Tambah Data</a></li>
                         <li><a href="#"><i class="fa fa-angle-double-right"></i> Tampil Data</a></li>
                     </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-user"></i>
-                        <span>Data Khatib</span>
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </a>
-                    <ul class="treeview-menu">
-                      <li><a href="#"><i class="fa fa-angle-double-right"></i> Tambah Data</a></li>
-                      <li><a href="#"><i class="fa fa-angle-double-right"></i> Tampil Data</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-user"></i> <span>Data Imam</span>
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </a>
-                    <ul class="treeview-menu">
-                      <li><a href="#"><i class="fa fa-angle-double-right"></i> Tambah Data</a></li>
-                      <li><a href="#"><i class="fa fa-angle-double-right"></i> Tampil Data</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-user"></i> <span>Data Bilal</span>
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </a>
-                    <ul class="treeview-menu">
-                      <li><a href="#"><i class="fa fa-angle-double-right"></i> Tambah Data</a></li>
-                      <li><a href="#"><i class="fa fa-angle-double-right"></i> Tampil Data</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-user"></i> <span>Data Pengurus Masjid</span>
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </a>
-                    <ul class="treeview-menu">
-                      <li><a href="#"><i class="fa fa-angle-double-right"></i> Tambah Data</a></li>
-                      <li><a href="#"><i class="fa fa-angle-double-right"></i> Tampil Data</a></li>
-                    </ul>
-                </li>
-
             </ul>
         </section>
         <!-- /.sidebar -->

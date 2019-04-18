@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>SI Penjadwalan Khotbah</title>
+        <title>website Kepegawain </title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -35,7 +35,7 @@
         <header class="header">
             <a href="index.html" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
-                SI Penjadwalan Khotbah
+                data website
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top" role="navigation">
@@ -240,14 +240,14 @@
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="glyphicon glyphicon-user"></i>
-                                <span>Aldi Ganteng <i class="caret"></i></span>
+                                <span>admin Ganteng <i class="caret"></i></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
                                     <img src="assets/img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
-                                        Aldi Ganteng - Orang Ganteng
+                                        admin Ganteng - Orang Soleh
                                         <small>Member since Nov. 2012</small>
                                     </p>
                                 </li>

@@ -25,7 +25,7 @@
                             150
                         </h3>
                         <p>
-                            Jumlah Masjid
+                            Jumlah admin
                         </p>
                     </div>
                     <div class="icon">
@@ -101,7 +101,7 @@
                             65
                         </h3>
                         <p>
-                            Jumlah Pengurus Masjid
+                            Jumlah Pengurus 
                         </p>
                     </div>
                     <div class="icon">

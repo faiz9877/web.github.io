@@ -15,10 +15,10 @@
         <!-- Small boxes (Stat box) -->
           <form>
             <div class="form-group">
-              <label for="nama">Nama Masjd</label>
+              <label for="nama">Nama pegawai</label>
               <input type="text" name="nama"class="form-control">
             </div><div class="form-group">
-              <label for="nama">Alamat Masjd</label>
+              <label for="nama">Alamat Em@il</label>
               <input type="text" name="alamat"class="form-control">
             </div>
             <button type="submit" class="btn btn-default bg-blue">Simpan</button>
