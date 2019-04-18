@@ -1,7 +1,6 @@
 <?php include "head.php"; ?>
 			<h2>Data Karyawan &raquo; Edit Data</h2>
 			<hr />
-
 			<?php
 			$nik = $_GET['nik'];
 			$sql = mysqli_query($koneksi, "SELECT * FROM karyawan WHERE nik='$nik'");

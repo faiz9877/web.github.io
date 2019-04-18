@@ -4,13 +4,12 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     header("location: karyawan_data");
     exit;
 }
-require_once "koneksi.php";
- 
+
 $username = $password = "";
 $username_err = $password_err = "";
  
 if($_SERVER["REQUEST_METHOD"] == "POST"){
- 
+
     if(empty(trim($_POST["username"]))){
         $username_err = "Tolong isi nama pengguna.";
     } else{
@@ -24,6 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     
     if(empty($username_err) && empty($password_err)){
+        require_once "koneksi.php";
         $sql = "SELECT id, username, password FROM users WHERE username = ?";
         
         if($stmt = mysqli_prepare($koneksi, $sql)){
