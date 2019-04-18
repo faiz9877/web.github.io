@@ -3,11 +3,9 @@ include("koneksi.php");
 include("library.php");
 session_start();
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-  $key="Logout";
-  $value="logout";
+  $usernich="<li><a href='#'>Profile</a><ul><li ><a href='reset_password'>Ubah Sandi Saya</a></li><li><a href='logout'>Logout</a></li></ul></li>";
 }else{
-  $key="Login";
-  $value="login";
+  $usernich="<li><a href='login'>Login</a></li>";
 }
 ?>
 <!DOCTYPE html>
@@ -38,7 +36,9 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 			  <li ><a href="karyawan_cetak">Cetak Data Karyawan</a></li>
 			</ul>
 		</li>
-    <li><a href="<?php echo $value; ?>"><?php echo $key; ?></a></li>
+    <!-- ini punya user -->
+      <?php echo $usernich; ?>
+    <!-- akhir punya user -->
 	</ul>
 	</div>
 	</nav>
