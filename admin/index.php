@@ -6,14 +6,15 @@
     default:
       include 'dashboard.php';
       break;
-    case 'tambah_masjid':
-      include 'tambah_masjid.php';
+    case 'tambah_admin':
+      include 'tambah_admin.php';
       break;
-      case 'tampil_masjid':
-        include 'tampil_masjid.php';
-        break;
+      // case 'tampil_masjid':
+      //   include 'tampil_masjid.php';
+      //   break;
 
   }
-  require('dashboard.php');
-  require('footer.php');
+  // require('dashboard.php');
+  // require('footer.php');
+  include'footer.php';
  ?>

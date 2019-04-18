@@ -25,7 +25,7 @@
                             150
                         </h3>
                         <p>
-                            Jumlah admin
+                            admin
                         </p>
                     </div>
                     <div class="icon">
@@ -44,7 +44,7 @@
                             53<sup style="font-size: 20px">%</sup>
                         </h3>
                         <p>
-                            Jumlah Khatib
+                            Data . . . .s
                         </p>
                     </div>
                     <div class="icon">
@@ -54,65 +54,7 @@
                         More info <i class="fa fa-arrow-circle-right"></i>
                     </a>
                 </div>
-            </div><!-- ./col -->
-            <div class="col-lg-3 col-xs-6">
-                <!-- small box -->
-                <div class="small-box bg-yellow">
-                    <div class="inner">
-                        <h3>
-                            44
-                        </h3>
-                        <p>
-                            Jumlah Imam
-                        </p>
-                    </div>
-                    <div class="icon">
-                        <i class="fa fa-user"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">
-                        More info <i class="fa fa-arrow-circle-right"></i>
-                    </a>
-                </div>
-            </div><!-- ./col -->
-            <div class="col-lg-3 col-xs-6">
-                <!-- small box -->
-                <div class="small-box bg-red">
-                    <div class="inner">
-                        <h3>
-                            65
-                        </h3>
-                        <p>
-                            Jumlah Bilal
-                        </p>
-                    </div>
-                    <div class="icon">
-                        <i class="fa fa-user"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">
-                        More info <i class="fa fa-arrow-circle-right"></i>
-                    </a>
-                </div>
-            </div><!-- ./col -->
-            <div class="col-lg-3 col-xs-6">
-                <!-- small box -->
-                <div class="small-box bg-purple">
-                    <div class="inner">
-                        <h3>
-                            65
-                        </h3>
-                        <p>
-                            Jumlah Pengurus 
-                        </p>
-                    </div>
-                    <div class="icon">
-                        <i class="fa fa-user"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">
-                        More info <i class="fa fa-arrow-circle-right"></i>
-                    </a>
-                </div>
-            </div><!-- ./col -->
-        </div><!-- /.row -->
+            </div>
 
 
 

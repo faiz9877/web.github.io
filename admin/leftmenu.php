@@ -24,14 +24,14 @@
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-building-o"></i>
-                        <span>Data website</span>
+                        <span>Data Admin Website</span>
                         <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="?page=tambah_masjid"><i class="fa fa-angle-double-right"></i> Tambah Data</a></li>
-                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Tampil Data</a></li>
+                        <li><a href="?page=tambah_admin"><i class="fa fa-angle-double-right"></i> Tambah Data</a></li>
+                        <li><a href="?page=tampil_admin"><i class="fa fa-angle-double-right"></i> Tampil Data</a></li>
                     </ul>
-            </ul>
+                </li>
         </section>
         <!-- /.sidebar -->
     </aside>
