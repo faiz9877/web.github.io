@@ -21,7 +21,7 @@
 					  
 	
 			<?php
-				 $namaDepan= "Teknik";
+				 $namaDepan= "Teknik GITHUB";
 				 $namaBelakang= "Informatika";
 				 $namaLengkap= "$namaDepan $namaBelakang";
 				 echo "<br>";
