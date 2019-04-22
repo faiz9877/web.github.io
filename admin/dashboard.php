@@ -50,7 +50,7 @@
                 <div class="small-box bg-green">
                     <div class="inner">
                         <h3>
-                        <?php echo $sql_hitung; ?>
+                        <?php echo $sql_hitung2; ?>
                         </h3>
                         <p>
                             Total Karyawan
