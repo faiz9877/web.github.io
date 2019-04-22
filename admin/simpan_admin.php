@@ -1,8 +1,7 @@
 <?php include 'koneksi.php';
- $namalengkap = $_POST['nama'];
- $alamat = $_POST['alamat'];
- $no_telpon = $_POST['no_telpon'];
- $foto = $_POST['foto'];
+ $nama = $_POST['nama'];
+ $username = $_POST['username'];
+ $foto = $_POST['password'];
 
  if($_POST['simpan']){
    $extensi_diperbolehkan = array('png','jpg','jpeg');
@@ -15,7 +14,7 @@
   if(in_array($extensi, $extensi_diperbolehkan) === true){
     if ($ukuran < 5000000000) {
       move_uploaded_file($file_tmp, 'assets/dist/img/'.$namafoto);
-         $sqlQuery = "insert into tabel_pengurus(Nama_Lengkap, Alamat,No_Telpon, Foto) values ('$namalengkap','$alamat','$no_telpon','$namafoto')";
+         $sqlQuery = "insert into tabel_pengurus(Nama, ,Username, password) values ('$nama','$username','$password')";
          //sintaks sql yg digunakan untuk menyimpan inputan masjid ke database
          //tbl_masjid adalah nama tabel yang kita gunakan untuk menyimpan data masjid
          $query = mysqli_query($link, $sqlQuery);

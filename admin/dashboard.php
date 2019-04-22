@@ -44,7 +44,7 @@
                             53<sup style="font-size: 20px">%</sup>
                         </h3>
                         <p>
-                            Data . . . .s
+                            Data
                         </p>
                     </div>
                     <div class="icon">

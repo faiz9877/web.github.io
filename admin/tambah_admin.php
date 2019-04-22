@@ -23,10 +23,10 @@
                   <label>Password</label>
                     <input type="text" name="No_Telpon" class="form-control" required>
                   </div>
-            <div class="box-body">
+            <!-- <div class="box-body">
               <label for="foto">Foto Pengurus</label>
                   <input type="file" name="foto" class="form-control" required >
-                 </div>
+                 </div> -->
                   <div class="box-footer">
                     <input type="submit" class="btn btn-primary" name="simpan" value='Simpan'>
             </div>

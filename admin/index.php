@@ -9,9 +9,9 @@
     case 'tambah_admin':
       include 'tambah_admin.php';
       break;
-      // case 'tampil_masjid':
-      //   include 'tampil_masjid.php';
-      //   break;
+      case 'tampil_admin.php':
+        include 'tampil_php.php';
+        break;
 
   }
   // require('dashboard.php');
