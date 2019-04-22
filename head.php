@@ -3,7 +3,7 @@ include("koneksi.php");
 include("library.php");
 session_start();
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-  $usernich="<li><a href='#'>Profile</a><ul><li ><a href='reset_password'>Ubah Sandi Saya</a></li><li><a href='logout'>Logout</a></li></ul></li>";
+  $usernich="<li><a href='#'>Profile</a><ul><li ><a href='reset_password'>Ubah Sandi Saya</a></li><li><a href='admin'>Admin Portal</a></li><li><a href='logout'>Logout</a></li></ul></li>";
 }else{
   $usernich="<li><a href='login'>Login</a></li>";
 }
