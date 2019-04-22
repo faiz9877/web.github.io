@@ -3,7 +3,7 @@
     $wkwk1=mysqli_query($koneksi, "SELECT COUNT(id) AS total1 FROM users");
     $val=mysqli_fetch_assoc($wkwk1);
     $sql_hitung=$val['total1'];
-    $wkwk2=mysqli_query($koneksi, "SELECT COUNT(id) AS total2 FROM karyawan");
+    $wkwk2=mysqli_query($koneksi, "SELECT COUNT(nik) AS total2 FROM karyawan");
     $val=mysqli_fetch_assoc($wkwk2);
     $sql_hitung2=$val['total2'];
 ?>
