@@ -1,3 +1,12 @@
+<?php
+    include_once('../koneksi.php');
+    $wkwk1=mysqli_query($koneksi, "SELECT COUNT(id) AS total1 FROM users");
+    $val=mysqli_fetch_assoc($wkwk1);
+    $sql_hitung=$val['total1'];
+    $wkwk2=mysqli_query($koneksi, "SELECT COUNT(id) AS total2 FROM karyawan");
+    $val=mysqli_fetch_assoc($wkwk2);
+    $sql_hitung2=$val['total2'];
+?>
 <!-- Right side column. Contains the navbar and content of the page -->
 <aside class="right-side">
     <!-- Content Header (Page header) -->
@@ -22,7 +31,7 @@
                 <div class="small-box bg-aqua">
                     <div class="inner">
                         <h3>
-                            150
+                            <?php echo $sql_hitung; ?>
                         </h3>
                         <p>
                             admin
@@ -41,10 +50,10 @@
                 <div class="small-box bg-green">
                     <div class="inner">
                         <h3>
-                            53<sup style="font-size: 20px">%</sup>
+                        <?php echo $sql_hitung; ?>
                         </h3>
                         <p>
-                            Data
+                            Total Karyawan
                         </p>
                     </div>
                     <div class="icon">

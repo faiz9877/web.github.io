@@ -1,4 +1,9 @@
 <?php
+session_start();
+if(empty($_SESSION["loggedin"])){
+	header("location: ../login");
+    exit;
+}
   require('header.php');
   require('leftmenu.php');
   $page = $_GET['page'];
