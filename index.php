@@ -29,8 +29,8 @@
 			  ?>			
 	<div class="well">
 		<h2><p align="center"><b>Official Developer Banjarbaru</b></p></h2>
-		<p>- Muhammad Faiz</p>
+		<p><a href="https://github.com/faiz9877">- Muhammad Faiz</a></p>
 		<P><a href="https://github.com/aldiskatel">- Muhammad Aldian Nur</a></P>
-		<P>- Muhammad Rifky Wardana</P>
+		<P><a href="https://github.com/ikydhana">- Muhammad Rifky Wardana</a></P>
 	</div>
 <?php include "foot.php"; ?>
