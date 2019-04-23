@@ -14,8 +14,8 @@ if(empty($_SESSION["loggedin"])){
     case 'tambah_admin':
       include 'tambah_admin.php';
       break;
-      case 'tampil_admin.php':
-        include 'tampil_php.php';
+      case 'tampil_admin':
+        include 'tampil_admin.php';
         break;
 
   }
