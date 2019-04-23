@@ -1,4 +1,6 @@
-<?php include "head.php"; ?>
+<?php include "head.php"; 
+include_once('koneksi.php');
+?>
             <h2>Laporan Data Karyawan</h2>
             <hr />
             <br />
