@@ -47,7 +47,7 @@ include 'koneksi.php';
            <ul class="pagination pagination-sm no-margin pull-right">
              <li><a href="#">Halaman</a></li>
             <?php for($i=1; $i<=$pages; $i++) { ?>
-              <li><a href="?page=tampil_admind&halaman=<?php echo $i; ?>"><?php echo $i; ?></a>
+              <li><a href="?page=tampil_admin&halaman=<?php echo $i; ?>"><?php echo $i; ?></a>
               </li> <?php } ?>
               <div class="background">
                   <img src="assets/img/blur-background09.jpg" />
