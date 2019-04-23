@@ -33,7 +33,7 @@
     <body class="skin-black">
         <!-- header logo: style can be found in header.less -->
         <header class="header">
-            <a href="index.html" class="logo">
+            <a href="../" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
                 data website
             </a>
