@@ -1,0 +1,8 @@
+1. Start Your XAMPP/LAMPP
+2. Copy web.github.io to (in linux /opt/lampp/htdocs/web.github.io) (in windows C:xampp/htdocs/web.github.io)
+3. Start Your Browser
+4. Open Your PhpMyAdmin
+5. Create New Database "uniska_latihan_app1"
+6. Open Your Database
+7. Import Database "uniska_latihan_app1.sql" To Database "uniska_latihan_app1"
+8. Open New Tab And Fill The Address Bar With "localhost/web.github.io"
