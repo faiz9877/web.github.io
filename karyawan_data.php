@@ -1,11 +1,13 @@
 <?php 
-if($sisennya === false){
-	header("location: login");
-    exit;
-}	
-include "head.php"; 
+// session_start();
+// if(empty($_SESSION["loggedin"])){
+// 	header("location: login");
+//     exit;
+// }
 include_once('koneksi.php');
+include "head.php"; 
 ?>
+
 		<h2>Data Karyawan</h2>
 		<hr />
 <?php
