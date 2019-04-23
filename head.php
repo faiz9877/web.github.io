@@ -1,12 +1,17 @@
 <?php
 include("library.php");
 session_start();
+$cek=basename($_SERVER["SCRIPT_FILENAME"], '.php');
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
   $usernich="<li><a href='#'>Profile</a><ul><li ><a href='reset_password'>Ubah Sandi Saya</a></li><li><a href='admin'>Admin Portal</a></li><li><a href='logout'>Logout</a></li></ul></li>";
-  $sisennya=true;
+  if($cek=="login"){
+    header('location:admin');
+  }
 }else{
   $usernich="<li><a href='login'>Login</a></li>";
-  $sisennya=false;
+  if($cek=="karyawan_data"){
+    header('location:login');
+  }
 }
 ?>
 <!DOCTYPE html>
