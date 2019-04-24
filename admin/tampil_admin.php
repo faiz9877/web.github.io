@@ -21,20 +21,18 @@ include_once('../koneksi.php');
     $page = isset($_GET["halaman"]) ? (int)$_GET["halaman"] : 1;
     $mulai = ($page>1) ? ($page * $halaman) - $halaman : 0;
     $result = mysqli_query($koneksi,"select from username,created_at from users");
-    $total = mysqli_num_rows($result);
-    $pages = ceil($total/$halaman);s
-    $result = mysqli_query($koneksi,"select username,created_at from users"); or die(mysqli_error);
+    // $total = mysqli_num_rows($result);
+    // $pages = ceil($total/$halaman);
+    $result = mysqli_query($koneksi,"select username,created_at from users"); 
   ?>
    <thead>
-     <tr><th>id_Admin</th><th>username</th><th>password</th><th>created_at</th><th>aksi</th></tr>
+     <tr><th>username</th><th>created_at</th><th>aksi</th></tr>
    </thead>
     <tbody>
-      <?php while ($users=mysqli_fetch_array($query)) { ?>
+      <?php while ($users=mysqli_fetch_array($result)) { ?>
         <tr><td><?php echo $users[0]; ?></td>
           <td><?php echo $users[1]; ?></td>
-          <td><?php echo $users[2]; ?></td>
-          <td><?php echo $users[3]; ?></td>
-          <!-- <td><a href="?page=edit_users&id=<?php echo $users[0]; ?>"><i class="fa fa-edit"></i></a> || -->
+          <td>
             <a href="?page=hapus_users&id=<?php echo $users[0];?>"
                onclick="return confirm('Anda yakin ingin menghapus users <?php echo $users[1]; ?> ?')">
                <i class="fa fa-trash-o"></i></a>
