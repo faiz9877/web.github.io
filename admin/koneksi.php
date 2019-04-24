@@ -1,5 +1,5 @@
 <?php $db_host = 'localhost';
-$db_name = 'si_masjid'; //sesuaikan dengan nama database yang digunakan
+$db_name = 'uniska_latihan_app1'; //sesuaikan dengan nama database yang digunakan
 $db_user = 'root';
 $db_pass = '';
 $link = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
